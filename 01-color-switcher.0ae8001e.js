@@ -1,0 +1,3 @@
+const t={body:document.querySelector("body"),startBtn:document.querySelector("[data-start]"),stopBtn:document.querySelector("[data-stop]")};let e=null;function a(){return`#${Math.floor(16777215*Math.random()).toString(16).padStart(6,0)}`}t.startBtn.addEventListener("click",(function(s){t.startBtn.disabled=!0,t.stopBtn.classList.add("active"),t.startBtn.classList.remove("active"),t.stopBtn.disabled=!1,t.body.style.backgroundColor=a(),e=setInterval((()=>{t.body.style.backgroundColor=a()}),1e3)})),t.stopBtn.addEventListener("click",(function(a){t.stopBtn.disabled=!0,t.startBtn.disabled=!1,t.startBtn.classList.add("active"),t.stopBtn.classList.remove("active"),clearInterval(e)}//!Second variant to solve the task
+));
+//# sourceMappingURL=01-color-switcher.0ae8001e.js.map
